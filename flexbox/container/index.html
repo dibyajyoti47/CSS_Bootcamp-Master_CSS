@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flext container</title>
+    <style>
+        .container {
+            margin-top: 50px;
+            height: 700px;
+            background-color: #f19861;
+            display: flex;
+            flex-direction: row; /* row-reverse / column / column-reverse */
+            flex-wrap: wrap;    /* default - no-wrap */        
+            justify-content: center; /* flex-end, flex-start */ /* space-around / space-between / space-evenly */
+            align-items: flex-start; /* defalt - stretch,  flex-end, baseline  */ /* space-around / space-between / space-evenly */
+            align-content: center;  /* space-around / space-between / space-evenly */
+        }
+        .item {
+            padding: 30px;
+            margin: 10px;
+            width: 70px;
+            background-color: #06af8f;
+            text-align: center;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+</body>
+</html>
